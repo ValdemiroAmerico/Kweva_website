@@ -1,0 +1,18 @@
+{
+  "members": [
+    {
+      "name": "Nome do Membro",
+      "role": {
+        "pt": "Função",
+        "en": "Role"
+      },
+      "bio": {
+        "pt": "Área de especialização e breve biografia.",
+        "en": "Area of expertise and short biography."
+      },
+      "photo": "",
+      "email": "",
+      "linkedin": ""
+    }
+  ]
+}

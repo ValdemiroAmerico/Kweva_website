@@ -1,0 +1,19 @@
+{
+  "_como_usar": "Adicione um objeto por pessoa em 'members'. Campos: name, role{pt,en}, bio{pt,en}, photo (caminho, ex.: assets/team/nome.jpg; opcional), email e linkedin (opcionais). Veja team.example.json.",
+  "members": [
+    {
+      "name": "Valdemiro Américo",
+      "role": {
+        "pt": "CEO",
+        "en": "CEO"
+      },
+      "bio": {
+        "pt": "Estatístico com experiência em investigação socioeconómica, inquéritos, análise de dados e monitoria e avaliação em Moçambique. Licenciado em Estatística pela Universidade Eduardo Mondlane e mestre em Estatística Aplicada e Biometria pela Universidade Federal de Viçosa.",
+        "en": "Statistician experienced in socioeconomic research, surveys, data analysis, and monitoring and evaluation in Mozambique. BSc in Statistics from Eduardo Mondlane University and MSc in Applied Statistics and Biometrics from the Federal University of Viçosa."
+      },
+      "photo": "assets/team/valdemiro-americo.jpg",
+      "email": "",
+      "linkedin": ""
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "_como_usar": "Adicione parceiros e clientes autorizados. Campos: name, logo (ex.: assets/partners/nome.png; opcional), url (opcional).",
+  "partners": []
+}

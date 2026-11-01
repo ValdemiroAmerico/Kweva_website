@@ -1,0 +1,42 @@
+{
+  "partners": [
+    {
+      "name": "Nome da organização",
+      "logo": "",
+      "url": ""
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": {
+        "pt": "Texto do testemunho.",
+        "en": "Testimonial text."
+      },
+      "name": "Nome",
+      "role": {
+        "pt": "Cargo",
+        "en": "Role"
+      },
+      "organisation": "Organização"
+    }
+  ],
+  "news": [
+    {
+      "title": {
+        "pt": "Título",
+        "en": "Title"
+      },
+      "date": "2026-01-31",
+      "summary": {
+        "pt": "Resumo curto.",
+        "en": "Short summary."
+      },
+      "url": "",
+      "image": "assets/news/exemplo.jpg",
+      "category": {
+        "pt": "Monitoria",
+        "en": "Monitoring"
+      }
+    }
+  ]
+}
