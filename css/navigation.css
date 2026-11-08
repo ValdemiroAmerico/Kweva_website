@@ -1,0 +1,24 @@
+/* Light navigation aligned with the Kweva logo palette. */
+body .header{background:#fff;border-bottom:1px solid #e1ebee;box-shadow:0 3px 16px rgba(8,36,61,.04)}
+body .header .header-inner{min-height:88px;gap:24px}
+body .header .brand{flex-shrink:0;margin-right:auto}
+body .header .brand img{width:180px;height:auto;background:transparent;padding:0;border-radius:0}
+body .header .nav{gap:25px}
+body .header .nav>a,body .header .nav-trigger{color:#16364f;text-transform:none;font-size:14px;font-weight:700;letter-spacing:0}
+body .header .nav>a{padding:14px 0;border:0}
+body .header .nav>a:hover,body .header .nav>a[aria-current=page],body .header .nav-trigger:hover,body .header .nav-trigger.is-current,body .header .nav-trigger[aria-expanded=true]{color:#008e94}
+body .header .nav .nav-cta{background:transparent;border:0;border-radius:0;padding:14px 0}
+body .header .nav .nav-cta:before{content:none}
+body .header .nav .nav-cta:hover{background:transparent;color:#008e94}
+body .header .nav-submenu{border-top-color:#008e94;text-transform:none}
+body .header .language-switch{margin-left:12px;padding:0;order:3}
+body .header .lang-current{min-width:150px;justify-content:space-between;gap:12px;background:#fff!important;border:1px solid #c5d5e4!important;border-radius:8px!important;color:#314557!important;padding:10px 12px!important;font-size:13px!important;font-weight:500!important}
+body .header .lang-label{white-space:nowrap}
+body .header .menu-button{color:#16364f}
+@media(min-width:1101px){body .header .header-inner{width:min(1360px,calc(100% - 48px));height:auto}body .header .nav{display:flex}}
+@media(max-width:1100px){body .header .nav{background:#fff;gap:2px;padding:18px 24px}body .header .nav>a{padding:12px 0}body .header .nav-trigger{padding:12px 0}body .header .nav-submenu{background:#fff}body .header .nav .nav-cta{padding:12px 0}body .header .brand img{width:160px}body .header .header-inner{gap:16px}}
+@media(max-width:480px){body .header .header-inner{gap:8px;width:calc(100% - 24px)}body .header .brand img{width:125px;padding:0}body .header .lang-current{min-width:114px;font-size:11px!important;padding:8px!important}body .header .language-switch{margin-left:0}body .header .menu-button{font-size:12px;padding:8px 0}}
+
+body .header .nav .nav-cta{background:#008e94;color:#fff;border-radius:7px;padding:11px 18px}
+body .header .nav .nav-cta:hover{background:#08777d;color:#fff}
+@media(max-width:1100px){body .header .nav .nav-cta{padding:11px 18px;margin-top:10px}}

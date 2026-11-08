@@ -12,7 +12,33 @@
       },
       "photo": "",
       "email": "",
-      "linkedin": ""
+      "linkedin": "",
+      "phone": "",
+      "summary": {
+        "pt": "Apresentação curta para o cartão.",
+        "en": "Short introduction for the card."
+      },
+      "sections": [
+        {
+          "title": {
+            "pt": "Experiência profissional",
+            "en": "Professional experience"
+          },
+          "items": [
+            {
+              "period": "2020–2024",
+              "title": {
+                "pt": "Cargo e organização",
+                "en": "Role and organisation"
+              },
+              "description": {
+                "pt": "Descreva responsabilidades e resultados confirmados.",
+                "en": "Describe confirmed responsibilities and achievements."
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

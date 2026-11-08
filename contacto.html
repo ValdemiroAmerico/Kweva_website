@@ -9,16 +9,15 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/favicon.png">
     <meta name="theme-color" content="#08243d">
-    <link rel="canonical" href="https://www.example.com/contacto.html">
-    <meta property="og:url" content="https://www.example.com/contacto.html">
-    <meta property="og:image" content="https://www.example.com/assets/about-banner.jpg">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Kweva Research &amp; Consulting">
     <meta property="og:locale" content="pt_MZ">
     <meta property="og:title" content="Contacto | Kweva Research &amp; Consulting">
     <meta property="og:description" content="Entre em contacto com a Kweva Research & Consulting em Maputo.">
-    <link rel="stylesheet" href="css/style.css?v=legibilidade-2">
+    <link rel="stylesheet" href="css/style.css?v=chevron-3">
+    <link rel="stylesheet" href="css/navigation.css?v=2">
 </head>
 
 <body>
@@ -35,14 +34,7 @@
                         type="button" data-language="en" aria-pressed="false"><span class="language-flag"
                             aria-hidden="true">🇬🇧</span><span>English</span></button></div>
             </div>
-            <nav class="nav" id="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="servicos.html">Serviços</a>
-                <a href="academy.html">Academy</a>
-                <a href="team.html">Equipa</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contacto.html" aria-current="page" class="nav-cta">Contacto</a>
-            </nav>
+            <nav class="nav" id="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><div class="nav-group"><button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-about"><span>Sobre</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></button><div class="nav-submenu" id="nav-about" hidden><a href="sobre.html">Quem somos</a><a href="team.html">Equipa</a></div></div><div class="nav-group"><button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-services"><span>Serviços</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></button><div class="nav-submenu" id="nav-services" hidden><a href="servicos.html">Todos os serviços</a><a href="estudos-inqueritos.html">Estudos e inquéritos</a><a href="estatistica-dados.html">Estatística e dados</a><a href="monitoria-avaliacao.html">Monitoria e avaliação</a><a href="formacao-apoio.html">Formação e apoio técnico</a></div></div><a href="academy.html">Academy</a><div class="nav-group"><button class="nav-trigger" type="button" aria-expanded="false" aria-controls="nav-careers"><span>Carreiras</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></button><div class="nav-submenu" id="nav-careers" hidden><a href="carreiras.html#trabalhar">Trabalhar na Kweva</a><a href="carreiras.html#vagas">Vagas</a><a href="carreiras.html#candidatura">Candidatura espontânea</a></div></div><a href="faq.html">FAQ</a><a href="contacto.html" class="nav-cta" aria-current="page">Contacto</a></nav>
         </div>
     </header>
     <main id="main">
@@ -57,9 +49,11 @@
             <div class="container contact-layout">
                 <div>
                     <h2>Envie-nos uma mensagem.</h2>
-                    <p class="small">Após configurar o e-mail institucional, o formulário prepara uma mensagem para
-                        envio através da sua aplicação de e-mail.</p>
-                    <form id="contact-form" data-email="">
+                    <p class="small">Envie a sua mensagem pelo formulário. O envio é processado pelo FormSubmit e encaminhado para a equipa Kweva.</p>
+                    <form id="contact-form" action="https://formsubmit.co/valdemiroeusebio2@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Contacto — Kweva website">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" hidden tabindex="-1" autocomplete="off" aria-hidden="true">
                         <div class="form-grid">
                             <div class="field"><label for="name">Nome *</label><input id="name" name="name"
                                     autocomplete="name" required></div>
@@ -71,21 +65,21 @@
                         <div class="field"><label for="subject">Assunto *</label><input id="subject" name="subject"
                                 required></div>
                         <div class="field"><label for="message">Mensagem *</label><textarea id="message" name="message"
-                                required></textarea></div><button class="button" type="submit">Preparar e-mail</button>
+                                required></textarea></div><button class="link-chevron button" type="submit">Enviar mensagem</button>
                         <p id="form-status" role="status" class="small" style="margin-top:14px"></p>
                     </form>
                 </div>
-                <aside class="contact-details">
-                    <p class="eyebrow">Onde estamos</p>
-                    <h2>Rua Carlos Cardoso, Polana Caniço.</h2>
-                    <p>Cidade de Maputo, Moçambique.</p>
-                    <p><span class="contact-pending">E-mail institucional: a disponibilizar em breve.</span></p>
+                <aside class="contact-details" aria-labelledby="contact-details-title">
+                    <h2 id="contact-details-title">Informações de contacto</h2>
+                    <dl class="contact-info-list">
+                        <div class="contact-info-row"><dt><span class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><span>Endereço</span></dt><dd><address>Rua Carlos Cardoso, Polana Caniço.<br><span>Cidade de Maputo, Moçambique.</span></address></dd></div>
+                        <div class="contact-info-row"><dt><span class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 3 3 5-3 3c2 3 3 4 6 6l3-3 5 3c0 3-2 5-5 4C9 19 5 15 3 8 2 5 4 3 7 3Z"/></svg></span><span>Telefone</span></dt><dd><a href="tel:+5531972456077">+55 31 97245-6077</a></dd></div>
+                        <div class="contact-info-row"><dt><span class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span><span>E-mail</span></dt><dd><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=valdemiroeusebio2%40gmail.com" target="_blank" rel="noopener noreferrer">valdemiroeusebio2@gmail.com</a></dd></div>
+                        <div class="contact-info-row"><dt><span class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13.5 8L3 21l1.5-4.5A9 9 0 1 1 21 11.5Z"/><path d="m8 7 2 3-1 1c1 2 2 3 4 4l1-1 3 2"/></svg></span><span>WhatsApp</span></dt><dd><a href="https://wa.me/5531972456077" target="_blank" rel="noopener noreferrer">+55 31 97245-6077</a></dd></div>
+                    </dl>
                     <div class="contact-social">
-                        <h3>Siga a Kweva</h3>
-                        <p>Consulte as nossas redes oficiais e acompanhe as próximas atualizações.</p>
-                        <div class="contact-training-note"><strong>Kweva Academy:</strong> também recebemos pedidos de
-                            inscrição e propostas para formações em Excel e Programação em R.</div>
-                        <div class="social-directory" data-social-directory aria-label="Canais sociais oficiais"></div>
+                        <h3>Redes sociais</h3>
+                        <div class="social-directory" data-social-directory aria-label="Redes sociais disponíveis"></div>
                     </div>
                 </aside>
             </div>
@@ -108,16 +102,15 @@
                     <div class="social-block">
                         <h4>Acompanhe a Kweva</h4>
                         <div class="social-links" id="social-links" aria-label="Redes sociais da Kweva"></div>
-                        <p class="social-note" id="social-note">Perfis oficiais em preparação.</p>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">© 2026 Kweva Research & Consulting, Lda.</div>
+            <div class="footer-bottom"><span>© 2026 Kweva Research & Consulting, Lda.</span> <span>Todos os direitos reservados.</span> <a href="privacidade.html" class="footer-privacy">Política de privacidade</a></div>
         </div>
     </footer>
-    <script src="js/translations.js" defer></script>
-    <script src="js/site.js" defer></script>
-    <script src="js/social.js" defer></script>
+    <script src="js/translations.js?v=chevron-2" defer></script>
+    <script src="js/site.js?v=revisao-1" defer></script>
+    <script src="js/social.js?v=sem-setas-2" defer></script>
 </body>
 
 </html>

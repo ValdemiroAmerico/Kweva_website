@@ -10,7 +10,6 @@
   whatsapp:['WhatsApp','<path d="M12 2a10 10 0 0 0-8.500 15.200L2 22l4.900-1.400A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.300 14.800l-.4-.2-2.800.8.800-2.700-.3-.4A8 8 0 0 1 12 4zm-3 3.500c-.3 0-.7.100-1 .5-.4.400-1 1.100-1 2.600s1.100 3 1.300 3.200c.2.200 2.200 3.400 5.400 4.600 2.700 1 3.200.8 3.800.7.600-.1 1.900-.8 2.100-1.600.3-.8.300-1.400.2-1.500-.1-.2-.3-.3-.7-.5l-2-1c-.3-.1-.5-.1-.7.100l-.9 1.100c-.2.200-.3.200-.6.100-.3-.2-1.200-.4-2.300-1.400-.9-.8-1.400-1.700-1.600-2-.2-.3 0-.5.100-.6l.5-.6c.1-.2.200-.3.300-.5.100-.2 0-.4 0-.5l-.9-2.200c-.2-.5-.5-.5-.7-.5z"/>']
  };
  const featured=['linkedin','facebook','instagram','youtube','whatsapp'];
- const personalProfiles={instagram:true};
  const isSafe=(v,k)=>{try { const u=new URL(v);if(!['https:','http:'].includes(u.protocol))return false;
   if(k==='whatsapp')return u.hostname==='wa.me'||u.hostname==='api.whatsapp.com'||u.hostname==='www.whatsapp.com';
   return true;
@@ -23,11 +22,11 @@
    const url=(k==='whatsapp' && /^\+?[0-9\s()-]{8,}$/.test(raw))?'https://wa.me/'+raw.replace(/\D/g,''):raw;
    const valid=!!url&&isSafe(url,k);
    if(valid)active++;
-   if(box){const wrap=document.createElement(valid?'a':'span');wrap.className=valid?'social-icon':'social-icon unavailable';wrap.title=P[k][0]+(valid?(personalProfiles[k]?' — perfil pessoal provisório':''):' — em breve');wrap.setAttribute('aria-label',P[k][0]+(valid?(personalProfiles[k]?' — perfil pessoal provisório':''):' — em breve'));if(valid){wrap.href=url;wrap.target='_blank';wrap.rel='noopener noreferrer';}wrap.innerHTML=makeIcon(k);box.appendChild(wrap);}
-   directories.forEach(dir=>{const el=document.createElement(valid?'a':'div');el.className='social-directory-item'+(valid?'':' is-pending');if(valid){el.href=url;el.target='_blank';el.rel='noopener noreferrer';}el.innerHTML=makeIcon(k)+'<span>'+P[k][0]+'</span>'+(valid?(personalProfiles[k]?'<small>Perfil pessoal provisório</small>':'<span class="social-arrow" aria-hidden="true">↗</span>'):'<small>Em breve</small>');dir.appendChild(el);});
+   if(box){const wrap=document.createElement(valid?'a':'span');wrap.className=valid?'social-icon':'social-icon unavailable';wrap.title=P[k][0];wrap.setAttribute('aria-label',P[k][0]);if(valid){wrap.href=url;wrap.target='_blank';wrap.rel='noopener noreferrer';}wrap.innerHTML=makeIcon(k);box.appendChild(wrap);}
+   directories.forEach(dir=>{const el=document.createElement(valid?'a':'div');el.className='social-directory-item'+(valid?'':' is-pending');el.title=P[k][0];el.setAttribute('aria-label',P[k][0]);if(valid){el.href=url;el.target='_blank';el.rel='noopener noreferrer';}el.innerHTML=makeIcon(k)+'<span>'+P[k][0]+'</span>';dir.appendChild(el);});
   });
-  const note=document.querySelector('#social-note');if(note)note.textContent=active?'Instagram pessoal do fundador disponível provisoriamente. Os canais oficiais estão em preparação.':'Perfis oficiais em preparação.';
+  const note=document.querySelector('#social-note');if(note)note.hidden=true;
  }).catch(()=>{
-  const note=document.querySelector('#social-note');if(note)note.textContent='Canais em atualização.';
+  const note=document.querySelector('#social-note');if(note)note.hidden=true;
  });
 })();

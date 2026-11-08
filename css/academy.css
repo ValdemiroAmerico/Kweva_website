@@ -120,7 +120,7 @@ body.academy-clean .ac-hero-inner{padding-top:30px}
    The text remains HTML and thus can be localized without generating image files. */
 .ac-course-visual{position:relative;overflow:hidden;border-radius:inherit;aspect-ratio:700 / 228}
 .ac-course-visual>.ac-course-image{width:100%;height:100%;object-fit:cover;display:block}
-.ac-image-english{display:none;position:absolute;z-index:2;box-sizing:border-box;align-items:center;justify-content:flex-start;color:#fff;font-family:'DM Sans',Arial,sans-serif;font-weight:800;line-height:1.03;text-align:left;letter-spacing:-.03em;pointer-events:none}
+.ac-image-english{display:none;position:absolute;z-index:2;box-sizing:border-box;align-items:center;justify-content:flex-start;color:#fff;font-family:'Poppins',Arial,sans-serif;font-weight:800;line-height:1.03;text-align:left;letter-spacing:-.03em;pointer-events:none}
 html[lang="en"] .ac-image-english{display:flex}
 .ac-visual-excel .ac-image-english{left:26%;top:11%;height:67%;width:33%;padding:0 0 0 1.5%;background:linear-gradient(90deg,#087a46 0%,#087746 100%);font-size:clamp(15px,2.0vw,33px)}
 .ac-visual-r .ac-image-english{left:9%;top:51%;height:34%;width:38%;padding:0 0 0 1%;background:#0965aa;font-size:clamp(14px,1.92vw,32px)}
@@ -134,3 +134,5 @@ html[lang="en"] .ac-image-english{display:flex}
   text-justify: auto;
   hyphens: manual;
 }
+
+@media(max-width:1100px){.academy-clean .header .nav{display:none}.academy-clean .header .nav.open{display:flex}}

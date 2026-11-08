@@ -4,8 +4,8 @@
     {
       "name": "Valdemiro Américo",
       "role": {
-        "pt": "CEO",
-        "en": "CEO"
+        "pt": "Fundador e Diretor",
+        "en": "Founder & Director"
       },
       "bio": {
         "pt": "Estatístico com experiência em investigação socioeconómica, inquéritos, análise de dados e monitoria e avaliação em Moçambique. Licenciado em Estatística pela Universidade Eduardo Mondlane e mestre em Estatística Aplicada e Biometria pela Universidade Federal de Viçosa.",
@@ -13,7 +13,60 @@
       },
       "photo": "assets/team/valdemiro-americo.jpg",
       "email": "valdemiroeusebio2@gmail.com",
-      "linkedin": "linkedin.com/in/valdemiroamerico"
+      "linkedin": "https://www.linkedin.com/in/valdemiroamerico",
+      "phone": "+5531972456077",
+      "summary": {
+        "pt": "Estatística aplicada, investigação socioeconómica e análise de dados para apoiar melhores decisões.",
+        "en": "Applied statistics, socioeconomic research and data analysis to support better decisions."
+      },
+      "sections": [
+        {
+          "title": {
+            "pt": "Formação académica",
+            "en": "Education"
+          },
+          "items": [
+            {
+              "title": {
+                "pt": "Mestrado em Estatística Aplicada e Biometria",
+                "en": "MSc in Applied Statistics and Biometrics"
+              },
+              "description": {
+                "pt": "Universidade Federal de Viçosa, Brasil.",
+                "en": "Federal University of Viçosa, Brazil."
+              }
+            },
+            {
+              "title": {
+                "pt": "Licenciatura em Estatística",
+                "en": "BSc in Statistics"
+              },
+              "description": {
+                "pt": "Universidade Eduardo Mondlane, Moçambique.",
+                "en": "Eduardo Mondlane University, Mozambique."
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "pt": "Áreas de atuação",
+            "en": "Areas of expertise"
+          },
+          "items": [
+            {
+              "title": {
+                "pt": "Investigação e análise de dados",
+                "en": "Research and data analysis"
+              },
+              "description": {
+                "pt": "Investigação socioeconómica, inquéritos, análise estatística e monitoria e avaliação em Moçambique.",
+                "en": "Socioeconomic research, surveys, statistical analysis, and monitoring and evaluation in Mozambique."
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
