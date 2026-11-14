@@ -25,7 +25,13 @@ jobs:
       - name: Configure public URL
         env:
           SITE_URL: ${{ steps.pages.outputs.base_url }}
-        run: python3 scripts/configure-site.py --url "$SITE_URL"
+        run: |
+          # Pages can report an HTTP base URL before HTTPS enforcement is enabled.
+          # Keep generated canonical URLs and sitemap entries on HTTPS.
+          case "$SITE_URL" in
+            http://*) SITE_URL="https://${SITE_URL#http://}" ;;
+          esac
+          python3 scripts/configure-site.py --url "$SITE_URL"
       - name: Check local pages and resources
         run: python3 scripts/check-site.py
       - name: Build public files
