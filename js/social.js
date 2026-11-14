@@ -22,8 +22,8 @@
    const url=(k==='whatsapp' && /^\+?[0-9\s()-]{8,}$/.test(raw))?'https://wa.me/'+raw.replace(/\D/g,''):raw;
    const valid=!!url&&isSafe(url,k);
    if(valid)active++;
-   if(box){const wrap=document.createElement(valid?'a':'span');wrap.className=valid?'social-icon':'social-icon unavailable';wrap.title=P[k][0];wrap.setAttribute('aria-label',P[k][0]);if(valid){wrap.href=url;wrap.target='_blank';wrap.rel='noopener noreferrer';}wrap.innerHTML=makeIcon(k);box.appendChild(wrap);}
-   directories.forEach(dir=>{const el=document.createElement(valid?'a':'div');el.className='social-directory-item'+(valid?'':' is-pending');el.title=P[k][0];el.setAttribute('aria-label',P[k][0]);if(valid){el.href=url;el.target='_blank';el.rel='noopener noreferrer';}el.innerHTML=makeIcon(k)+'<span>'+P[k][0]+'</span>';dir.appendChild(el);});
+   if(box){const wrap=document.createElement(valid?'a':'span');wrap.className=valid?'social-icon':'social-icon unavailable';wrap.title=P[k][0];wrap.setAttribute('aria-label',P[k][0]);if(!valid)wrap.setAttribute('role','img');if(valid){wrap.href=url;wrap.target='_blank';wrap.rel='noopener noreferrer';}wrap.innerHTML=makeIcon(k);box.appendChild(wrap);}
+   directories.forEach(dir=>{const el=document.createElement(valid?'a':'div');el.className='social-directory-item'+(valid?'':' is-pending');el.title=P[k][0];el.setAttribute('aria-label',P[k][0]);if(!valid)el.setAttribute('role','img');if(valid){el.href=url;el.target='_blank';el.rel='noopener noreferrer';}el.innerHTML=makeIcon(k)+'<span>'+P[k][0]+'</span>';dir.appendChild(el);});
   });
   const note=document.querySelector('#social-note');if(note)note.hidden=true;
  }).catch(()=>{

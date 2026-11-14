@@ -1,0 +1,29 @@
+/* Sobre: composição editorial simples, com uma única secção de fundo suave. */
+.about-page :is(.about-intro,.about-context,.about-principles){padding-block:88px}
+.about-page :is(.about-intro,.about-principles,.about-team){background:#fff}
+.about-page .about-intro .about-intro-copy{width:min(760px,calc(100% - 64px));max-width:760px;margin-inline:auto}
+.about-page :is(.about-intro,.about-context,.about-principles,.about-team) h2{font-size:var(--type-section-title);line-height:1.35;margin:0 0 24px}
+.about-page :is(.about-intro,.about-context,.about-principles) p{font-size:var(--type-body);line-height:1.5556;margin:0 0 18px;color:#435d68}
+.about-page :is(.about-intro,.about-context,.about-team) .eyebrow{font-size:11px;line-height:1.6;letter-spacing:.14em;color:#087b80;margin-bottom:18px}
+.about-page :is(.about-intro-copy,.about-context-copy) p:last-child{margin-bottom:0}
+.about-context{background:#eef8f3}
+.about-context-layout{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:8%;align-items:center}
+.about-context-image{display:block;width:100%;height:auto}
+.about-context-copy{max-width:560px}
+.about-principles h2{max-width:650px}
+.about-principle-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px;margin-top:44px}
+.about-principle-grid article{border-top:var(--accent-rule);padding-top:24px}
+.about-principle-grid h3{font-size:var(--type-card-title);line-height:1.4;margin:0 0 14px}
+.about-page .about-principle-grid p{font-size:var(--type-body);margin-bottom:0}
+.about-team-inner{display:flex;justify-content:space-between;align-items:center;gap:40px;border-top:1px solid #dce8eb;padding-block:48px 64px}
+.about-page .about-team h2{font-size:var(--type-section-title);margin:0}
+.about-team .button{flex-shrink:0;font-size:14px}
+@media(max-width:991px){.about-context-layout{gap:40px}.about-principle-grid{gap:32px}}
+@media(max-width:767px){
+ .about-page :is(.about-intro,.about-context,.about-principles){padding-block:48px}
+ .about-page .about-intro .about-intro-copy{width:calc(100% - 36px)}
+ .about-context-layout,.about-principle-grid{grid-template-columns:1fr;gap:28px}
+ .about-context-copy{max-width:none}
+ .about-principle-grid{margin-top:32px}
+ .about-team-inner{align-items:flex-start;flex-direction:column;gap:24px;padding-block:32px 48px}
+}

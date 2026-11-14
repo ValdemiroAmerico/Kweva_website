@@ -33,6 +33,10 @@ for page in pages:
     if base:
         source = re.sub(r'\s*<link\b[^>]*rel="canonical"[^>]*>', '', source)
         source = re.sub(r'\s*<meta\b[^>]*property="og:(?:url|image)"[^>]*>', '', source)
+        if page.name == '404.html':
+            source = re.sub(r'\s*<base\b[^>]*>', '', source)
+            base_path = urlsplit(base).path.rstrip('/') + '/'
+            source = source.replace('<head>', '<head>\n    <base href="' + html.escape(base_path, quote=True) + '">')
         tags = '\n    <meta property="og:image" content="' + html.escape(base + '/assets/photos/home-lagos.jpg', quote=True) + '">'
         if page.name != '404.html':
             url = base + '/' + ('' if page.name == 'index.html' else page.name)

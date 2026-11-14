@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://valdemiroamerico.github.io/Kweva_website/sitemap.xml

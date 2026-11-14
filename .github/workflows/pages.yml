@@ -1,0 +1,49 @@
+name: Publish GitHub Pages
+
+# Publication is started explicitly from Actions, after reviewing the site.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Configure public URL
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: python3 scripts/configure-site.py --url "$SITE_URL"
+      - name: Check local pages and resources
+        run: python3 scripts/check-site.py
+      - name: Build public files
+        run: python3 scripts/build-static.py
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,6 @@
+/* Composição partilhada pelas secções institucionais. */
+.kweva-editorial-visual{position:relative;isolation:isolate;min-width:0;margin:0 16px 16px 0;padding:0}
+.kweva-editorial-visual::before{content:"";position:absolute;inset:28px -16px -16px 28px;background:#a9d7cd;border-radius:4px;z-index:-1}
+.kweva-editorial-photo{overflow:hidden;border-radius:32px 4px 4px 4px;background:#d5e9e3}
+.kweva-editorial-photo img{display:block;width:100%;height:auto;aspect-ratio:1600/1067;object-fit:contain;opacity:1;filter:none}
+@media(max-width:767px){.kweva-editorial-visual{margin:0 12px 12px 0}.kweva-editorial-visual::before{inset:20px -12px -12px 20px}.kweva-editorial-photo{border-top-left-radius:24px}}

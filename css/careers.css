@@ -1,22 +1,90 @@
-.careers-page section[id]{scroll-margin-top:110px}
-.career-actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:28px}
-.career-vacancy-link{color:#d3eeee;font-size:14px;font-weight:700}
-.career-heading{max-width:650px;margin-bottom:36px}
-.career-heading h2{font-size:clamp(28px,3vw,40px);line-height:1.3}
-.career-heading>p:not(.eyebrow){color:var(--muted)}
-.career-areas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
-.career-areas article{border-top:2px solid #9bcac6;padding-top:22px}
-.career-areas h3{font-size:19px;line-height:1.4}
-.career-areas p{font-size:14px;color:var(--muted)}
-.career-vacancies{background:#f0f7f6}
-.career-empty{max-width:760px;margin-top:30px;padding:28px;background:#fff;border:1px solid var(--line);border-radius:12px}
-.career-empty h3{font-size:19px}
-.career-empty p{font-size:14px;color:var(--muted)}
-.career-application{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:64px;align-items:start}
-.career-form{padding:30px;border:1px solid var(--line);border-radius:14px;background:#fff;min-width:0}
-.career-form select{width:100%;padding:12px;border:1px solid #b9cbd1;border-radius:4px;background:#fff;color:var(--navy)}
-.career-form input[type=file]{font-size:13px;max-width:100%}
-.career-consent{display:flex;align-items:flex-start;gap:10px;font-size:12px;line-height:1.7;color:var(--muted);margin:22px 0}
-.career-consent input{flex-shrink:0;margin-top:5px;accent-color:var(--teal)}
-@media(max-width:900px){.career-application{grid-template-columns:1fr;gap:12px}.career-areas{grid-template-columns:1fr;gap:16px}}
-@media(max-width:480px){.career-form{padding:20px}.career-form .form-grid{grid-template-columns:1fr}}
+/* Carreiras: oportunidades primeiro; detalhes e candidatura em momentos distintos. */
+.careers-view .careers-page{background:#fff}
+.careers-page section[id]{scroll-margin-top:112px}
+.careers-view .career-section{padding-block:88px}
+.careers-view .career-heading{max-width:680px;margin:0 0 40px}
+.careers-view .career-heading h2{font-size:var(--type-section-title);line-height:1.25;margin:0 0 20px}
+.careers-view .career-heading p:not(.eyebrow){font-size:var(--type-body);line-height:1.6;color:var(--text);margin-bottom:0}
+/* Fotografia de colaboração e painel de introdução independente. */
+.career-hero{position:relative;isolation:isolate;background:#e7f5f0;overflow:hidden}
+.career-hero-photo{position:absolute;inset:0 0 0 auto;z-index:-1;width:62%;height:100%;object-fit:cover;object-position:center top}
+.careers-view .career-hero>.container{min-height:540px;display:flex;align-items:center;padding-block:64px}
+.career-hero-copy{width:48%;max-width:590px;padding:48px;background:#e7f5f0}
+.careers-view .career-hero h1{font-size:32px;line-height:1.25;max-width:22ch;margin:0 0 24px;color:var(--navy)}
+.careers-view .career-hero .lead{font-size:20px;line-height:1.6;color:var(--text);margin:0}
+.career-actions{display:flex;align-items:center;flex-wrap:wrap;gap:16px 24px;margin-top:28px}
+.careers-view .career-actions .card-link{margin:0;padding-block:8px;font-size:16px}
+/* Navegação local; as âncoras do menu principal mantêm-se válidas. */
+.career-jump-nav{background:#fff;border-bottom:1px solid var(--line)}
+.careers-view .career-jump-nav>.container{display:flex;flex-wrap:wrap;gap:8px 36px;padding-block:16px}
+.career-jump-nav a{display:inline-flex;align-items:center;min-height:44px;font-size:16px;font-weight:600;color:var(--navy);text-underline-offset:6px}
+.career-jump-nav a:hover{color:#087b80;text-decoration:underline}
+/* Uma coluna de leitura para as vagas, sem cartões sobrepostos. */
+.careers-view .career-vacancies{background:#fff}
+.careers-view .career-vacancies>.container{max-width:960px}
+.career-vacancy-empty{border-top:var(--accent-rule);border-bottom:1px solid var(--line);padding-block:32px 36px}
+.careers-view .career-vacancy-empty h3{font-size:24px;line-height:1.35;margin:0 0 16px}
+.career-vacancy-empty p{font-size:var(--type-body);line-height:1.6;max-width:64ch;color:var(--muted);margin:0}
+.career-vacancy-empty .card-link{margin-top:24px;font-size:16px}
+/* Áreas de colaboração expansíveis, acessíveis por teclado. */
+.career-working{background:#f3f8f6}
+.careers-view .career-working-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:80px;align-items:start}
+.careers-view .career-working .career-heading{margin:0;max-width:440px}
+.career-role-list{min-width:0;border-top:var(--accent-rule)}
+.career-role-list details{border-bottom:1px solid #cbded9}
+.career-role-list summary{position:relative;cursor:pointer;list-style:none;padding:24px 40px 24px 0;color:var(--navy);font-size:22px;font-weight:600;line-height:1.4;transition:color .2s ease}
+.career-role-list summary::-webkit-details-marker{display:none}
+.career-role-list summary::after{content:'+';position:absolute;right:4px;top:24px;color:#087b80;font-size:26px;font-weight:400;line-height:1.2}
+.career-role-list details[open]>summary::after{content:'−'}
+.career-role-list summary:hover{color:#087b80}
+.career-role-list summary:focus-visible{outline:3px solid var(--teal);outline-offset:4px}
+.career-role-list p{font-size:var(--type-body);line-height:1.6;color:var(--text);margin:0;padding:0 32px 28px 0}
+/* Formulário visível na página dedicada à candidatura. */
+.careers-view .career-apply>.container{max-width:960px}
+.careers-view .career-apply .career-heading{max-width:700px}
+.careers-view .career-form{margin-top:32px;padding:40px;border:1px solid var(--line);border-top:var(--accent-rule);border-radius:2px;background:#f7faf9;min-width:0;box-shadow:none}
+.careers-view .career-form .form-grid{gap:8px 24px}
+.careers-view .career-form .field{margin-bottom:24px}
+.career-form select{width:100%;padding:12px 14px;border:1px solid #b9cbd1;border-radius:8px;background:#fff;color:var(--navy)}
+.career-form input[type=file]{font-size:14px;max-width:100%;background:#fff}
+.career-form .small{font-size:14px;line-height:1.6;margin-top:10px}
+.career-consent{display:flex;align-items:flex-start;gap:12px;font-size:14px;line-height:1.6;color:var(--text);margin:4px 0 28px}
+.career-consent input{flex:none;width:18px;height:18px;margin-top:3px;accent-color:var(--teal)}
+.careers-view .career-form>.small:last-child{margin-bottom:0}
+@media(max-width:1023px){
+ .career-hero-copy{width:56%;padding:36px}
+ .careers-view .career-working-layout{gap:40px}
+}
+@media(max-width:767px){
+ .careers-view .career-section{padding-block:56px}
+ .career-hero{padding-top:260px}
+ .career-hero-photo{width:100%;height:260px;object-position:center top}
+ .careers-view .career-hero>.container{min-height:0;padding-block:0 32px}
+ .career-hero-copy{width:100%;max-width:none;padding:28px 24px}
+ .careers-view .career-hero h1{font-size:28px}
+ .careers-view .career-hero .lead{font-size:18px;line-height:1.6}
+ .career-actions{align-items:flex-start;gap:12px 20px}
+ .careers-view .career-jump-nav>.container{gap:4px 24px;padding-block:12px}
+ .career-jump-nav a{font-size:15px}
+ .careers-view .career-heading{margin-bottom:32px}
+ .careers-view .career-working-layout{grid-template-columns:minmax(0,1fr);gap:32px}
+ .career-role-list summary{font-size:20px;padding-block:22px}
+ .career-role-list p{padding-right:0}
+ .careers-view .career-form{padding:24px;margin-top:24px}
+ .careers-view .career-form .form-grid{grid-template-columns:minmax(0,1fr);gap:0}
+ .career-vacancy-empty{padding-block:28px}
+ .careers-view .career-vacancy-empty h3{font-size:22px}
+}
+@media(prefers-reduced-motion:reduce){
+ .career-role-list summary{transition:none}
+}
+
+/* Páginas distintas, com o estado atual identificado na navegação local. */
+.career-jump-nav a[aria-current="page"]{color:#087b80;text-decoration:underline;text-decoration-thickness:2px}
+.careers-view .career-hero--compact>.container{min-height:0;padding-block:64px}
+.career-hero--compact .career-hero-copy{width:100%;max-width:760px;padding:0}
+.careers-view .career-apply .career-form{margin-top:0}
+@media(max-width:767px){
+ .career-hero--compact{padding-top:0}
+ .careers-view .career-hero--compact>.container{padding-block:48px}
+}

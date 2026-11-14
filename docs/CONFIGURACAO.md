@@ -14,8 +14,8 @@ Não foi enviado nenhum formulário automaticamente durante a implementação. A
 python3 scripts/configure-site.py --email contacto@o-seu-dominio.mz --url https://o-seu-dominio.mz
 ```
 
-Pode configurar apenas `--email` ou `--url`. Um novo destinatário precisa de confirmar a ativação do FormSubmit. O script atualiza os destinos dos formulários; o contacto pessoal da equipa é independente. O domínio público ainda não foi configurado.
+Pode configurar apenas `--email` ou `--url`. Um novo destinatário precisa de confirmar a ativação do FormSubmit. O script atualiza os destinos dos formulários; o contacto pessoal da equipa é independente. Os metadados estão preparados para o endereço previsto `https://valdemiroamerico.github.io/Kweva_website/`; o workflow usa o endereço real fornecido pelo Pages. Consulte [PUBLICACAO.md](PUBLICACAO.md).
 
 ## Carreiras
 
-A página `carreiras.html` contém apresentação, vagas e candidatura espontânea. Atualize a secção `#vagas` quando houver oportunidades reais. O formulário envia o CV por FormSubmit com `multipart/form-data`, para o mesmo destinatário dos restantes formulários. Aceita PDF até 5 MB, com validação no navegador. Teste a entrega do anexo após ativar o formulário, se o serviço solicitar nova confirmação. Documentação: https://formsubmit.co/documentation .
+As páginas `carreiras.html`, `vagas.html` e `candidatura.html` apresentam, respetivamente, o trabalho na Kweva, as oportunidades e o formulário de candidatura espontânea. Atualize `vagas.html` quando houver oportunidades reais. O formulário envia o CV por FormSubmit com `multipart/form-data`, para o mesmo destinatário dos restantes formulários. Aceita PDF até 5 MB, com validação no navegador. Teste a entrega do anexo após ativar o formulário, se o serviço solicitar nova confirmação. Documentação: https://formsubmit.co/documentation .

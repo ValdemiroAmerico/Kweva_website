@@ -1,5 +1,5 @@
 {
-  "_como_usar": "Adicione um objeto por pessoa em 'members'. Campos: name, role{pt,en}, bio{pt,en}, photo (caminho, ex.: assets/team/nome.jpg; opcional), email e linkedin (opcionais). Veja team.example.json.",
+  "_como_usar": "Adicione um objeto por pessoa em 'members'. Campos: name, role{pt,en}, bio{pt,en}, photo (caminho, ex.: assets/team/nome.jpg; opcional), email e linkedin (opcionais). Veja team.example.json. Use bio com parágrafos separados por duas quebras de linha e profileStyle: 'narrative' para apresentar uma biografia em texto corrido, sem repetir as secções da cronologia.",
   "members": [
     {
       "name": "Valdemiro Américo",
@@ -8,16 +8,16 @@
         "en": "Founder & Director"
       },
       "bio": {
-        "pt": "Estatístico com experiência em investigação socioeconómica, inquéritos, análise de dados e monitoria e avaliação em Moçambique. Licenciado em Estatística pela Universidade Eduardo Mondlane e mestre em Estatística Aplicada e Biometria pela Universidade Federal de Viçosa.",
-        "en": "Statistician experienced in socioeconomic research, surveys, data analysis, and monitoring and evaluation in Mozambique. BSc in Statistics from Eduardo Mondlane University and MSc in Applied Statistics and Biometrics from the Federal University of Viçosa."
+        "pt": "Valdemiro Américo é estatístico com experiência em investigação socioeconómica e humanitária em Moçambique, tendo trabalhado no desenho e implementação de inquéritos, na coordenação de equipas de campo, no controlo de qualidade e na análise estatística de dados. É fundador e diretor da Kweva Research & Consulting e, atualmente, trabalha como Analista de Dados Júnior na IMPACT Initiatives – REACH, em Cabo Delgado, onde contribui para avaliações de necessidades humanitárias e para a identificação de perfis de vulnerabilidade dos agregados familiares. Ao longo do seu percurso, trabalhou com a UNU-WIDER, a Ipsos Moçambique, a Conexão Plus e a Bassela Consultoria, em projetos sobre emprego, mercados e condições de vida. É coautor de publicações sobre o percurso profissional de diplomados e os preços nos mercados da região metropolitana de Maputo. É licenciado em Estatística pela Universidade Eduardo Mondlane e mestre em Estatística Aplicada e Biometria pela Universidade Federal de Viçosa, no Brasil.",
+        "en": "Valdemiro Américo is a statistician with experience in socioeconomic and humanitarian research in Mozambique, having worked in survey design and implementation, field team coordination, data quality assurance and statistical analysis. He is the founder and director of Kweva Research & Consulting and currently works as a Junior Data Analyst with IMPACT Initiatives – REACH in Cabo Delgado, where he contributes to humanitarian needs assessments and the identification of household vulnerability profiles. He has worked with UNU-WIDER, Ipsos Mozambique, Conexão Plus and Bassela Consultoria on projects covering employment, markets and living conditions. He has co-authored publications on the early careers of graduates and prices in markets across the Maputo metropolitan area. He holds a BSc in Statistics from Eduardo Mondlane University and an MSc in Applied Statistics and Biometrics from the Federal University of Viçosa in Brazil."
       },
       "photo": "assets/team/valdemiro-americo.jpg",
       "email": "valdemiroeusebio2@gmail.com",
       "linkedin": "https://www.linkedin.com/in/valdemiroamerico",
-      "phone": "+5531972456077",
+      "phone": "+258820202118",
       "summary": {
-        "pt": "Estatística aplicada, investigação socioeconómica e análise de dados para apoiar melhores decisões.",
-        "en": "Applied statistics, socioeconomic research and data analysis to support better decisions."
+        "pt": "Investigação aplicada em Moçambique, do trabalho de campo à análise estatística.",
+        "en": "Applied research in Mozambique, from fieldwork to statistical analysis."
       },
       "sections": [
         {
@@ -34,7 +34,8 @@
               "description": {
                 "pt": "Universidade Federal de Viçosa, Brasil.",
                 "en": "Federal University of Viçosa, Brazil."
-              }
+              },
+              "period": "2025–2026"
             },
             {
               "title": {
@@ -44,7 +45,8 @@
               "description": {
                 "pt": "Universidade Eduardo Mondlane, Moçambique.",
                 "en": "Eduardo Mondlane University, Mozambique."
-              }
+              },
+              "period": "2017–2022"
             }
           ]
         },
@@ -60,13 +62,14 @@
                 "en": "Research and data analysis"
               },
               "description": {
-                "pt": "Investigação socioeconómica, inquéritos, análise estatística e monitoria e avaliação em Moçambique.",
-                "en": "Socioeconomic research, surveys, statistical analysis, and monitoring and evaluation in Mozambique."
+                "pt": "Investigação socioeconómica e humanitária, coordenação de equipas de campo, questionários digitais, controlo de qualidade e análise estatística e econométrica de dados.",
+                "en": "Socioeconomic and humanitarian research, field team coordination, digital questionnaires, quality assurance, and statistical and econometric data analysis."
               }
             }
           ]
         }
-      ]
+      ],
+      "profileStyle": "narrative"
     }
   ]
 }

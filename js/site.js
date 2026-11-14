@@ -75,7 +75,7 @@ function setLanguage(lang) {
  renderTexts();
  translateAttributes(document, lang);
  metaRecords.forEach(([element, original]) => { element.content = lang === 'en' ? translate(original) : original; });
- const pageNames = { 'Início':'Home', 'Sobre':'About', 'Serviços':'Services', 'Projetos':'Projects', 'Contacto':'Contact', 'Equipa':'Team', 'Team':'Team', 'Kweva Academy':'Kweva Academy', 'Inscrição':'Enrolment', 'FAQ':'Frequently asked questions', 'Página não encontrada':'Page not found', 'Carreiras':'Careers', 'Privacidade e dados pessoais':'Privacy and personal data', 'O que os censos mostram sobre Moçambique?':'What do the censuses tell us about Mozambique?', 'Estudos e inquéritos':'Studies and surveys', 'Estatística e dados':'Statistics and data', 'Monitoria e avaliação':'Monitoring and evaluation', 'Formação e apoio técnico':'Training and technical support' };
+ const pageNames = { 'Início':'Home', 'Sobre':'About', 'Serviços':'Services', 'Projetos':'Projects', 'Contacto':'Contact', 'Equipa':'Team', 'Team':'Team', 'Kweva Academy':'Kweva Academy', 'Inscrição':'Enrolment', 'FAQ':'Frequently asked questions', 'Página não encontrada':'Page not found', 'Carreiras':'Careers', 'Trabalhar na Kweva':'Working at Kweva', 'Vagas':'Vacancies', 'Candidatura espontânea':'Spontaneous application', 'Privacidade e dados pessoais':'Privacy and personal data', 'O que os censos mostram sobre Moçambique?':'What do the censuses tell us about Mozambique?', 'Estudos e inquéritos':'Studies and surveys', 'Estatística e dados':'Statistics and data', 'Monitoria e avaliação':'Monitoring and evaluation', 'Formação e apoio técnico':'Training and technical support' };
  document.title = (lang === 'en' ? (pageNames[originalPageTitle] || originalPageTitle) : originalPageTitle) + ' | Kweva Research & Consulting';
  const ogTitle = document.querySelector('meta[property="og:title"]');
  if (ogTitle) ogTitle.content = document.title;
@@ -120,7 +120,16 @@ currentLanguage?.addEventListener('click', event => {
 });
 dropdown?.querySelectorAll('[data-language]').forEach(button => button.addEventListener('click', () => { closeLanguages(); currentLanguage.focus(); }));
 document.addEventListener('click', event => { if (!dropdown?.contains(event.target)) closeLanguages(); });
-document.addEventListener('keydown', event => { if (event.key === 'Escape') { if (dropdown?.classList.contains('open')) currentLanguage.focus(); closeLanguages(); closeNavigation(); } });
+document.addEventListener('keydown', event => {
+ if (event.key !== 'Escape') return;
+ if (dropdown?.classList.contains('open')) currentLanguage.focus();
+ else if (nav?.classList.contains('open')) menuButton?.focus();
+ closeLanguages();
+ closeNavigation();
+});
+document.addEventListener('click', event => {
+ if (nav?.classList.contains('open') && !event.target.closest('.header')) closeNavigation();
+});
 
 // Navigation disclosures retain normal links and native keyboard behaviour.
 (() => {
@@ -157,6 +166,7 @@ document.addEventListener('keydown', event => { if (event.key === 'Escape') { if
   });
  });
  document.addEventListener('click', event => { if (!event.target.closest('.nav-group')) closeAll(); });
+ document.addEventListener('keydown', event => { if (event.key === 'Escape') closeAll(); });
  document.getElementById('main-nav')?.addEventListener('click', event => { if (event.target.closest('a')) closeAll(); });
  document.querySelector('.menu-button')?.addEventListener('click', () => closeAll());
  window.matchMedia('(max-width: 1100px)').addEventListener('change', () => { closeAll();closeNavigation(); });

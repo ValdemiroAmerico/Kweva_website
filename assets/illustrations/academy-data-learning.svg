@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 900" fill="none">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1920" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#eef7f1"/><stop offset="1" stop-color="#d7ece5"/></linearGradient>
+ <linearGradient id="screen" x1="1090" y1="180" x2="1630" y2="610" gradientUnits="userSpaceOnUse"><stop stop-color="#153b51"/><stop offset="1" stop-color="#0a293d"/></linearGradient>
+ <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0v48" stroke="#96bfb2" stroke-opacity=".2"/></pattern>
+ <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#153b51" flood-opacity=".12"/></filter>
+</defs>
+<path fill="url(#bg)" d="M0 0h1920v900H0z"/>
+<path fill="url(#grid)" d="M820 0h1100v900H820z"/>
+<circle cx="1410" cy="420" r="340" fill="#c2e2d5"/>
+<circle cx="1410" cy="420" r="292" stroke="#fff" stroke-opacity=".7"/>
+<circle cx="1410" cy="420" r="385" stroke="#9fcbbb" stroke-opacity=".45"/>
+<!-- A learning workspace: dashboard, analysis notes and an exercise notebook. -->
+<g filter="url(#shadow)">
+ <rect x="1035" y="215" width="650" height="425" rx="20" fill="#0d2e4d"/>
+ <rect x="1050" y="230" width="620" height="391" rx="10" fill="url(#screen)"/>
+ <path d="M1000 640h720l48 35c5 5 1 16-8 16H960c-9 0-13-11-8-16l48-35Z" fill="#8baaa6"/>
+ <path d="M1000 640h720l21 15H979l21-15Z" fill="#bed3cb"/>
+ <path d="M1290 640h140l12 13h-164l12-13Z" fill="#75938e"/>
+ <rect x="1080" y="261" width="121" height="11" rx="5.5" fill="#d4ede3"/>
+ <rect x="1080" y="282" width="76" height="5" rx="2.5" fill="#6d979b"/>
+ <circle cx="1630" cy="265" r="5" fill="#55c5b6"/>
+ <rect x="1080" y="316" width="340" height="261" rx="8" fill="#fff" fill-opacity=".07"/>
+ <path d="M1107 545h285M1107 485h285M1107 425h285M1107 365h285" stroke="#80aaa9" stroke-opacity=".2"/>
+ <rect x="1120" y="465" width="30" height="80" rx="3" fill="#7dc4ae"/>
+ <rect x="1170" y="427" width="30" height="118" rx="3" fill="#4db7a8"/>
+ <rect x="1220" y="446" width="30" height="99" rx="3" fill="#7dc4ae"/>
+ <rect x="1270" y="388" width="30" height="157" rx="3" fill="#4db7a8"/>
+ <rect x="1320" y="360" width="30" height="185" rx="3" fill="#a9dcc2"/>
+ <path d="m1135 439 50-36 50 8 50-49 50-27 41-13" stroke="#e8cb82" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+ <rect x="1440" y="316" width="197" height="146" rx="8" fill="#fff" fill-opacity=".07"/>
+ <circle cx="1538" cy="390" r="43" stroke="#365764" stroke-width="17"/>
+ <path d="M1538 347a43 43 0 1 1-41 56" stroke="#6cc6ad" stroke-width="17"/>
+ <rect x="1440" y="478" width="197" height="99" rx="8" fill="#fff" fill-opacity=".07"/>
+ <path d="M1460 551h157M1460 508h92M1460 526h60" stroke="#759b9d" stroke-width="4" stroke-linecap="round"/>
+ <path d="m1574 516 11 11 19-22" stroke="#a9dcc2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<!-- Floating exercise sheet. -->
+<g transform="rotate(-9 1050 578)" filter="url(#shadow)">
+ <rect x="914" y="441" width="240" height="308" rx="10" fill="#fffdf6"/>
+ <rect x="914" y="441" width="17" height="308" rx="5" fill="#178e89"/>
+ <path d="M957 478h132M957 498h89" stroke="#a9c4b8" stroke-width="6" stroke-linecap="round"/>
+ <rect x="956" y="535" width="165" height="94" rx="4" fill="#edf5ee"/>
+ <path d="M973 610h130M973 590h130M973 570h130" stroke="#d3e6da" stroke-width="2"/>
+ <path d="m980 600 23-18 24 8 28-35 26 10 14-16" stroke="#178e89" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M957 661h13m13 0h100M957 690h13m13 0h79" stroke="#a9c4b8" stroke-width="5" stroke-linecap="round"/>
+</g>
+<!-- Reproducible analysis: a small code panel, without language-specific labels. -->
+<g filter="url(#shadow)">
+ <rect x="1570" y="132" width="202" height="126" rx="10" fill="#fffdf6"/>
+ <circle cx="1590" cy="151" r="3" fill="#178e89"/><circle cx="1603" cy="151" r="3" fill="#b7d5c6"/><circle cx="1616" cy="151" r="3" fill="#b7d5c6"/>
+ <path d="m1621 181-17 16 17 16m96-32 17 16-17 16m-38-41-17 51" stroke="#178e89" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M1260 754h270" stroke="#99bdaf" stroke-width="2" stroke-linecap="round"/>
+<g fill="#178e89"><circle cx="1744" cy="453" r="5"/><circle cx="1000" cy="321" r="4"/><circle cx="1450" cy="761" r="4"/></g>
+</svg>

@@ -1,5 +1,11 @@
 // The form posts the CV directly to FormSubmit; no local storage of applications.
 (() => {
+ // Preserve incoming bookmarks created before the pages were separated.
+ const legacyPages = { '#vagas': 'vagas.html', '#candidatura': 'candidatura.html' };
+ if (location.pathname.endsWith('/carreiras.html') && legacyPages[location.hash]) {
+  location.replace(new URL(legacyPages[location.hash], location.href).href);
+  return;
+ }
  const cv = document.getElementById('career-cv');
  if (!cv) return;
  function validate() {

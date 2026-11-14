@@ -1,5 +1,7 @@
 // Original Portuguese text remains in the HTML so every page works without JavaScript.
 const kwevaEnglish = {
+  "Acompanhe as oportunidades de colaboração com a Kweva.": "Follow opportunities to work with Kweva.",
+  "Nesta página": "On this page",
   "Equipa": "Team",
   "Vamos conversar sobre o seu projeto.": "Let’s talk about your project.",
   "Descreva o estudo ou desafio que pretende desenvolver com a Kweva.": "Tell us about the study or challenge you would like to address with Kweva.",
@@ -474,3 +476,65 @@ const kwevaEnglish = {
   "Consultar vagas": "View vacancies",
   "Apresentar o meu perfil": "Introduce my profile",
 };
+
+// About: distinct content for collaboration and working principles.
+Object.assign(kwevaEnglish, {
+  "Uma consultora moçambicana.": "A Mozambican consultancy.",
+  "Como colaboramos": "How we collaborate",
+  "Um trabalho construído consigo.": "Working together, from the start.",
+  "Começamos por ouvir a sua equipa e compreender o desafio. Essa conversa ajuda a identificar prioridades, recursos disponíveis e perguntas a explorar.": "We start by listening to your team and understanding the challenge. This conversation helps identify priorities, available resources and questions to explore.",
+  "Ao longo do trabalho, discutimos as escolhas e os resultados consigo, para que a sua equipa possa acompanhar e interpretar o estudo.": "Throughout the work, we discuss choices and findings with you so your team can follow and interpret the study.",
+  "Transparência": "Transparency",
+  "Explicitamos os pressupostos, as escolhas de análise e os limites de cada estudo.": "We explain the assumptions, analytical choices and limitations of each study.",
+  "Escuta": "Listening",
+  "Consideramos a experiência das equipas e das pessoas envolvidas na investigação.": "We consider the experience of the teams and people involved in the research.",
+  "Clareza": "Clarity",
+  "Distinguimos o que os dados mostram daquilo que permanece incerto.": "We distinguish what the data shows from what remains uncertain."
+});
+
+// AI applications in research services.
+Object.assign(kwevaEnglish, {
+  "Inteligência artificial": "Artificial intelligence",
+  "IA como apoio à investigação.": "AI-assisted research.",
+  "A inteligência artificial pode apoiar tarefas de investigação e análise. A sua aplicação é avaliada em função da pergunta, dos dados disponíveis e das necessidades do projeto.": "Artificial intelligence can support research and analytical tasks. Its application is assessed according to the research question, available data and project needs.",
+  "Análise de texto": "Text analysis",
+  "Apoio à organização de respostas abertas, identificação de temas e síntese de documentos, com revisão dos resultados.": "Support for organising open-ended responses, identifying themes and summarising documents, with review of the results.",
+  "Exploração de evidência": "Evidence exploration",
+  "Apoio à pesquisa e comparação de informação em conjuntos de documentos, mantendo a ligação às fontes consultadas.": "Support for searching and comparing information across documents, maintaining links to the sources consulted.",
+  "Automação de tarefas": "Task automation",
+  "Apoio à preparação de dados e a tarefas repetitivas de análise, com verificações de qualidade ao longo do processo.": "Support for data preparation and repetitive analytical tasks, with quality checks throughout the process.",
+  "A interpretação e a validação dos resultados permanecem sob responsabilidade humana.": "People remain responsible for interpreting and validating the results.",
+  "Conversar sobre IA": "Discuss AI",
+  "Análise estatística, visualização de dados e aplicações de inteligência artificial para apoiar a investigação.": "Statistical analysis, data visualisation and applications of artificial intelligence to support research."
+});
+
+// Home: AI presented within the third service column.
+Object.assign(kwevaEnglish, {
+  "Análise e IA": "Analytics and AI",
+  "Exploramos aplicações de inteligência artificial na análise de texto, organização de dados e síntese de evidência, com revisão humana.": "We explore applications of artificial intelligence in text analysis, data organisation and evidence synthesis, with human review."
+});
+
+Object.assign(kwevaEnglish, {"Análise de dados e IA": "Data analytics and AI"});
+
+// Analytics: photographic sections and expandable applications.
+Object.assign(kwevaEnglish, {
+  "Análise estatística e aplicações de inteligência artificial para apoiar a investigação, com interpretação e validação humanas.": "Statistical analysis and applications of artificial intelligence to support research, with human interpretation and validation.",
+  "Investigação assistida por IA": "AI-assisted research",
+  "Explorar aplicações de IA": "Explore AI applications",
+  "Aplicações na investigação": "Research applications",
+  "Preparação e análise de dados": "Data preparation and analysis",
+  "Revisão documental": "Document review",
+  "Apoio à leitura e comparação de documentos, identificando temas, diferenças e lacunas que precisam de ser verificados nas fontes.": "Support for reading and comparing documents, identifying themes, differences and gaps that need to be checked against the sources.",
+  "Organizar informação para facilitar a consulta, comparar resultados e comunicar o que os dados mostram.": "Organising information to make it easier to explore, compare findings and communicate what the data shows.",
+  "Explorar aplicações": "Explore applications",
+  "Da informação à compreensão": "From information to understanding",
+  "Pesquisa em documentos": "Document search",
+  "Mapeamento de evidência": "Evidence mapping",
+  "Organização de fontes e resultados por tema, para identificar o conhecimento disponível e as questões ainda em aberto.": "Organising sources and findings by theme to identify available knowledge and questions that remain unanswered.",
+  "Visualização de resultados": "Visualising results"
+});
+
+Object.assign(kwevaEnglish, {"Explorar formações": "Explore courses", "Formações disponíveis": "Available courses"});
+
+// Perfil HTML de reserva, usado quando o JSON não pode ser carregado.
+Object.assign(kwevaEnglish, {"Ver mais": "Read more", "Ver menos": "Read less", "Fundador e Diretor": "Founder & Director", "Valdemiro Américo é estatístico com experiência em investigação socioeconómica e humanitária em Moçambique, tendo trabalhado no desenho e implementação de inquéritos, na coordenação de equipas de campo, no controlo de qualidade e na análise estatística de dados. É fundador e diretor da Kweva Research & Consulting e, atualmente, trabalha como Analista de Dados Júnior na IMPACT Initiatives – REACH, em Cabo Delgado, onde contribui para avaliações de necessidades humanitárias e para a identificação de perfis de vulnerabilidade dos agregados familiares. Ao longo do seu percurso, trabalhou com a UNU-WIDER, a Ipsos Moçambique, a Conexão Plus e a Bassela Consultoria, em projetos sobre emprego, mercados e condições de vida. É coautor de publicações sobre o percurso profissional de diplomados e os preços nos mercados da região metropolitana de Maputo. É licenciado em Estatística pela Universidade Eduardo Mondlane e mestre em Estatística Aplicada e Biometria pela Universidade Federal de Viçosa, no Brasil.": "Valdemiro Américo is a statistician with experience in socioeconomic and humanitarian research in Mozambique, having worked in survey design and implementation, field team coordination, data quality assurance and statistical analysis. He is the founder and director of Kweva Research & Consulting and currently works as a Junior Data Analyst with IMPACT Initiatives – REACH in Cabo Delgado, where he contributes to humanitarian needs assessments and the identification of household vulnerability profiles. He has worked with UNU-WIDER, Ipsos Mozambique, Conexão Plus and Bassela Consultoria on projects covering employment, markets and living conditions. He has co-authored publications on the early careers of graduates and prices in markets across the Maputo metropolitan area. He holds a BSc in Statistics from Eduardo Mondlane University and an MSc in Applied Statistics and Biometrics from the Federal University of Viçosa in Brazil."});
