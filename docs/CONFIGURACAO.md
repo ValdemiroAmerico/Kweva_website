@@ -14,7 +14,7 @@ Não foi enviado nenhum formulário automaticamente durante a implementação. A
 python3 scripts/configure-site.py --email contacto@o-seu-dominio.mz --url https://o-seu-dominio.mz
 ```
 
-Pode configurar apenas `--email` ou `--url`. Um novo destinatário precisa de confirmar a ativação do FormSubmit. O script atualiza os destinos dos formulários; o contacto pessoal da equipa é independente. Os metadados estão preparados para o endereço previsto `https://valdemiroamerico.github.io/Kweva_website/`; o workflow usa o endereço real fornecido pelo Pages. Consulte [PUBLICACAO.md](PUBLICACAO.md).
+Pode configurar apenas `--email` ou `--url`. Um novo destinatário precisa de confirmar a ativação do FormSubmit. O script atualiza os destinos dos formulários; o contacto pessoal da equipa é independente. Os metadados estão preparados para o endereço previsto `https://kweva-research.github.io/Kweva_website/`; o workflow usa o endereço real fornecido pelo Pages. Consulte [PUBLICACAO.md](PUBLICACAO.md).
 
 ## Carreiras
 

@@ -1,8 +1,8 @@
 # Publicar no GitHub Pages
 
-O repositório remoto é `ValdemiroAmerico/Kweva_website`. Sem domínio próprio, o endereço previsto é:
+O repositório remoto é `kweva-research/Kweva_website`. Sem domínio próprio, o endereço previsto é:
 
-https://valdemiroamerico.github.io/Kweva_website/
+https://kweva-research.github.io/Kweva_website/
 
 ## Publicação
 
@@ -45,3 +45,28 @@ python3 scripts/configure-site.py --url https://o-seu-dominio.mz
 Configure o domínio no GitHub Pages antes da publicação. O workflow volta a usar o endereço comunicado pelo Pages. Para mudar o destinatário dos formulários, use `--email`; isso não altera automaticamente os contactos escritos no texto da página de contacto ou da política de privacidade.
 
 Nenhuma publicação, alteração de definições do GitHub ou submissão real de formulário foi executada durante a revisão local.
+
+## Endereços sem `.html`
+
+O build cria pastas com `index.html`, por exemplo `sobre/index.html`, acessíveis por `/sobre/`. Os ficheiros HTML originais permanecem na raiz do projeto para edição. A navegação, as âncoras de cada página e os URLs dos scripts são ajustados no pacote de publicação; imagens, dados JSON, estilos e programas PDF continuam a resolver a partir da raiz do site.
+
+Exemplos depois de publicar:
+
+- `https://kweva-research.github.io/Kweva_website/sobre/`
+- `https://kweva-research.github.io/Kweva_website/servicos/`
+- `https://kweva-research.github.io/Kweva_website/contacto/`
+
+As ligações antigas `.html` redirecionam no navegador e preservam parâmetros e âncoras. Existe também um encaminhamento por HTML para navegadores sem JavaScript. O GitHub Pages não configura redirecionamentos HTTP 301 neste processo.
+
+O prefixo `/Kweva_website/` permanece enquanto a publicação for um projeto nesse repositório. Com um domínio próprio ou um repositório de site da organização, a geração adapta-se à nova raiz sem acrescentar o prefixo antigo.
+
+Verificações usadas pelo workflow:
+
+```sh
+python3 scripts/check-site.py
+python3 scripts/test-clean-urls.py
+python3 scripts/build-static.py --output _site
+python3 scripts/check-published.py _site --base-path /Kweva_website/
+```
+
+Para pré-visualizar os endereços novos localmente, sirva o pacote gerado em vez dos HTML de edição: `python3 -m http.server 8000 --directory _site`. As páginas de edição continuam a abrir pelos seus nomes `.html` antes do build.

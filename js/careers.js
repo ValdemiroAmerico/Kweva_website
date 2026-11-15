@@ -2,8 +2,8 @@
 (() => {
  // Preserve incoming bookmarks created before the pages were separated.
  const legacyPages = { '#vagas': 'vagas.html', '#candidatura': 'candidatura.html' };
- if (location.pathname.endsWith('/carreiras.html') && legacyPages[location.hash]) {
-  location.replace(new URL(legacyPages[location.hash], location.href).href);
+ if (/\/carreiras(?:\.html|\/|\/index\.html)$/.test(location.pathname) && legacyPages[location.hash]) {
+  location.replace(new URL(legacyPages[location.hash], document.baseURI).href);
   return;
  }
  const cv = document.getElementById('career-cv');

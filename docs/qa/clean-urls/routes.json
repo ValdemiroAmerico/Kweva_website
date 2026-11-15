@@ -1,0 +1,762 @@
+[
+  {
+    "page": "404.html",
+    "route": "404.html",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "404.html",
+    "route": "404.html",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "404.html",
+    "route": "404.html",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "404.html",
+    "route": "404.html",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "academy.html",
+    "route": "academy/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "academy.html",
+    "route": "academy/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "academy.html",
+    "route": "academy/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "academy.html",
+    "route": "academy/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "analise-populacao.html",
+    "route": "analise-populacao/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "analise-populacao.html",
+    "route": "analise-populacao/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "analise-populacao.html",
+    "route": "analise-populacao/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "analise-populacao.html",
+    "route": "analise-populacao/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "candidatura.html",
+    "route": "candidatura/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "candidatura.html",
+    "route": "candidatura/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "candidatura.html",
+    "route": "candidatura/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "candidatura.html",
+    "route": "candidatura/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "carreiras.html",
+    "route": "carreiras/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "carreiras.html",
+    "route": "carreiras/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "carreiras.html",
+    "route": "carreiras/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "carreiras.html",
+    "route": "carreiras/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "contacto.html",
+    "route": "contacto/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "contacto.html",
+    "route": "contacto/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "contacto.html",
+    "route": "contacto/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "contacto.html",
+    "route": "contacto/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "estatistica-dados.html",
+    "route": "estatistica-dados/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "estatistica-dados.html",
+    "route": "estatistica-dados/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "estatistica-dados.html",
+    "route": "estatistica-dados/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "estatistica-dados.html",
+    "route": "estatistica-dados/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "estudos-inqueritos.html",
+    "route": "estudos-inqueritos/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "estudos-inqueritos.html",
+    "route": "estudos-inqueritos/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "estudos-inqueritos.html",
+    "route": "estudos-inqueritos/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "estudos-inqueritos.html",
+    "route": "estudos-inqueritos/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "faq.html",
+    "route": "faq/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "faq.html",
+    "route": "faq/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "faq.html",
+    "route": "faq/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "faq.html",
+    "route": "faq/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "formacao-apoio.html",
+    "route": "formacao-apoio/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "formacao-apoio.html",
+    "route": "formacao-apoio/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "formacao-apoio.html",
+    "route": "formacao-apoio/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "formacao-apoio.html",
+    "route": "formacao-apoio/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "index.html",
+    "route": "",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "index.html",
+    "route": "",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "index.html",
+    "route": "",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "index.html",
+    "route": "",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "inscricao.html",
+    "route": "inscricao/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "inscricao.html",
+    "route": "inscricao/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "inscricao.html",
+    "route": "inscricao/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "inscricao.html",
+    "route": "inscricao/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "monitoria-avaliacao.html",
+    "route": "monitoria-avaliacao/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "monitoria-avaliacao.html",
+    "route": "monitoria-avaliacao/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "monitoria-avaliacao.html",
+    "route": "monitoria-avaliacao/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "monitoria-avaliacao.html",
+    "route": "monitoria-avaliacao/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "privacidade.html",
+    "route": "privacidade/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "privacidade.html",
+    "route": "privacidade/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "privacidade.html",
+    "route": "privacidade/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "privacidade.html",
+    "route": "privacidade/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "projetos.html",
+    "route": "projetos/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "projetos.html",
+    "route": "projetos/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "projetos.html",
+    "route": "projetos/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "projetos.html",
+    "route": "projetos/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "servicos.html",
+    "route": "servicos/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "servicos.html",
+    "route": "servicos/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "servicos.html",
+    "route": "servicos/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "servicos.html",
+    "route": "servicos/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "sobre.html",
+    "route": "sobre/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "sobre.html",
+    "route": "sobre/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "sobre.html",
+    "route": "sobre/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "sobre.html",
+    "route": "sobre/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "team.html",
+    "route": "team/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "team.html",
+    "route": "team/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "team.html",
+    "route": "team/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "team.html",
+    "route": "team/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "vagas.html",
+    "route": "vagas/",
+    "width": 390,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "vagas.html",
+    "route": "vagas/",
+    "width": 390,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "vagas.html",
+    "route": "vagas/",
+    "width": 1440,
+    "lang": "pt",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  },
+  {
+    "page": "vagas.html",
+    "route": "vagas/",
+    "width": 1440,
+    "lang": "en",
+    "overflow": false,
+    "badImages": [],
+    "badStyles": [],
+    "h1": 1
+  }
+]

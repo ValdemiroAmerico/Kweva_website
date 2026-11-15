@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 from urllib.parse import urlsplit
 from xml.sax.saxutils import escape
+from routes import page_path
 
 ROOT = Path(__file__).resolve().parent.parent
 parser = argparse.ArgumentParser(description=__doc__)
@@ -39,13 +40,13 @@ for page in pages:
             source = source.replace('<head>', '<head>\n    <base href="' + html.escape(base_path, quote=True) + '">')
         tags = '\n    <meta property="og:image" content="' + html.escape(base + '/assets/photos/home-lagos.jpg', quote=True) + '">'
         if page.name != '404.html':
-            url = base + '/' + ('' if page.name == 'index.html' else page.name)
+            url = base + '/' + page_path(page.name)
             safe = html.escape(url, quote=True)
             tags += '\n    <link rel="canonical" href="' + safe + '">\n    <meta property="og:url" content="' + safe + '">'
         source = source.replace('</head>', tags + '\n</head>')
     page.write_text(source)
 if base:
-    urls = [base + '/' + ('' if page.name == 'index.html' else page.name) for page in pages if page.name != '404.html' and not re.search(r'<meta\b[^>]*name="robots"[^>]*content="[^"]*noindex', page.read_text())]
+    urls = [base + '/' + page_path(page.name) for page in pages if page.name != '404.html' and not re.search(r'<meta\b[^>]*name="robots"[^>]*content="[^"]*noindex', page.read_text())]
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sitemap += ''.join('  <url><loc>' + escape(url) + '</loc></url>\n' for url in urls) + '</urlset>\n'
     (ROOT / 'sitemap.xml').write_text(sitemap)

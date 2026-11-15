@@ -34,8 +34,14 @@ jobs:
           python3 scripts/configure-site.py --url "$SITE_URL"
       - name: Check local pages and resources
         run: python3 scripts/check-site.py
+      - name: Test clean URLs
+        run: python3 scripts/test-clean-urls.py
       - name: Build public files
         run: python3 scripts/build-static.py
+      - name: Check published routes and assets
+        env:
+          SITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: python3 scripts/check-published.py _site --base-path "$SITE_BASE_PATH"
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
