@@ -331,7 +331,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .av-bottom-content strong{font-size:20px;color:#0c344f}
 .av-bottom-content p{margin:6px 0 0;color:#607684}
 .av-bottom-content a{color:#078b8e;font-weight:800;white-space:nowrap}
-.language-flag{font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;display:inline-block;font-size:19px;line-height:1}
+.language-flag{display:inline-block;width:24px;height:16px;flex:none;object-fit:cover;vertical-align:-3px}
 .lang-menu button{display:flex;align-items:center;gap:10px}
 @media(max-width:1000px){.av-hero-wrap{grid-template-columns:1fr .65fr;gap:24px}.av-dashboard{height:205px;padding:12px}.av-dashboard-charts{height:100px}.av-bars{height:85px}.av-ring{width:84px;height:84px;border-width:15px}}
 @media(max-width:760px){.av-hero-wrap{grid-template-columns:1fr;padding:55px 0 115px;min-height:0}.av-dashboard{display:none}.av-benefits{gap:10px}.av-grid{grid-template-columns:1fr;gap:22px}.av-courses{margin-top:-70px}.av-picture{aspect-ratio:2.4/1}.av-bottom-content{flex-direction:column;align-items:flex-start}}

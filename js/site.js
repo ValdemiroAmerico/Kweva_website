@@ -68,6 +68,20 @@ async function copyText(text) {
 }
 window.Kweva = {translate, setStatus, copyText, isEnglish: isEnglishNow};
 const metaRecords = [...document.querySelectorAll('meta[name="description"],meta[property="og:description"]')].map(element => [element, element.content]);
+const languageFlagSources = {pt: 'assets/flags/mz.svg', en: 'assets/flags/gb.svg'};
+function createLanguageFlag(lang) {
+ const image = document.createElement('img');
+ image.className = 'language-flag';
+ image.src = languageFlagSources[lang];
+ image.alt = '';
+ image.setAttribute('aria-hidden', 'true');
+ return image;
+}
+function renderLanguageFlags(lang) {
+ document.querySelectorAll('[data-language] .language-flag').forEach(element => {
+  element.replaceWith(createLanguageFlag(element.closest('[data-language]').dataset.language));
+ });
+}
 function setLanguage(lang) {
  lang = lang === 'en' ? 'en' : 'pt';
  collectText(document.body);
@@ -82,7 +96,10 @@ function setLanguage(lang) {
  const ogLocale = document.querySelector('meta[property="og:locale"]');
  if (ogLocale) ogLocale.content = lang === 'en' ? 'en_GB' : 'pt_MZ';
  const label = document.querySelector('.lang-label');
- if (label) label.textContent = lang === 'en' ? '🇬🇧 English' : '🇲🇿 Português';
+ if (label) {
+  label.replaceChildren(createLanguageFlag(lang), document.createTextNode(lang === 'en' ? ' English' : ' Português'));
+ }
+ renderLanguageFlags(lang);
  document.querySelectorAll('[data-language]').forEach(button => {
   const active = button.dataset.language === lang;
   button.classList.toggle('active', active);
