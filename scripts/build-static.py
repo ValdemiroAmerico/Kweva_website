@@ -79,6 +79,7 @@ def build(output):
     pages = {path.name for path in files}
     files.update((ROOT / 'css').glob('*.css'))
     files.update((ROOT / 'js').glob('*.js'))
+    files.update((ROOT / 'assets' / 'flags').glob('*.svg'))
     files.update(path for path in (ROOT / 'data').iterdir()
                  if path.is_file() and '.example.' not in path.name)
     files.update(ROOT / name for name in ['robots.txt', 'sitemap.xml'])
