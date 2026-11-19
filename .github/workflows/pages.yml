@@ -2,6 +2,9 @@ name: Publish GitHub Pages
 
 # Publication is started explicitly from Actions, after reviewing the site.
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
